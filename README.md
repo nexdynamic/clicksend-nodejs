@@ -3,7 +3,7 @@
 This is the official [ClickSend](https://clicksend.com) SDK. Documentation can be found [here](https://developers.clicksend.com/docs/rest/v3/?nodejs#introduction).
 
 ## Requirements
-  
+
 - [Sign Up](https://www.clicksend.com/signup) for a free ClickSend account.
 - Copy your API key from the [API Credentials](https://dashboard.clicksend.com/#/account/subaccount) area.
 
@@ -17,29 +17,12 @@ To download the SDK into your package run the command:
 npm i clicksend
 ```
 
-### Install TypeScript
-
-You will need to install typescript to compile the code.
-
-```shell
-sudo npm install typescript
-```
-
-### Compile the TypeScript into JavaScript
-
-Run the following commands to compile typescript into javascript:
-
-```shell
-sudo npm add request http bluebird @types/node
-tsc --target es5 /node_modules/clicksend/api.ts
-```
-
 ### Adding SDK into your project
 
 Copy the api.js file along with the node_modules directory into your project to use the library, and include this in your file to use the SDK:
 
 ```shell
-var api = require('./node_modules/clicksend/api.js');
+var api = require('clicksend');
 ```
 
 ## Documentation
@@ -49,6 +32,7 @@ Documentation for our SDK and REST API can be found [here](https://developers.cl
 ## Getting Started (sms/send example)
 
 Please follow the [installation](#installation) procedure and then run the following code:
+
 ```nodejs
 var api = require('./api.js');
 
@@ -71,4 +55,3 @@ smsApi.smsSendPost(smsCollection).then(function(response) {
 });
 
 ```
-

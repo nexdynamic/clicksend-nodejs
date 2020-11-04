@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "allowUnreachableCode": false,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+
+    "outDir": "lib",
+    "declaration": true
+  },
+  "include": ["src/api.ts"]
+}
